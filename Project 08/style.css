@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.elem {
+  height: 200px;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.elem h1 {
+  font-size: 6vw;
+  position: relative;
+  z-index: 9;
+  mix-blend-mode: difference;
+}
+
+.elem img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all linear 0.2s;
+  /* transform: translate(-50%, -50%); */
+}
